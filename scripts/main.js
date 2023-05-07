@@ -11,10 +11,10 @@ const myImage = document.querySelector("img");
 
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/pika.jfif") {
+  if (mySrc === "images/pika.jpg") {
     myImage.setAttribute("src", "images/raichu.png");
   } else {
-    myImage.setAttribute("src", "images/pika.jfif");
+    myImage.setAttribute("src", "images/pika.jpg");
   }
 };
 
