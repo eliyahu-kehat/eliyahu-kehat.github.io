@@ -3,9 +3,9 @@ const myHeading = document.querySelector("h1");
 // myHeading.forEach(el => el.textContent= "Hello world!");
 
 function click(text) {
-    alert("text: " + text);
+  alert("text: " + text);
 }
-myHeading.addEventListener("click", ()=>click(myHeading[0].textContent));
+myHeading.addEventListener("click", () => click(myHeading[0].textContent));
 
 const myImage = document.querySelector("img");
 
@@ -19,7 +19,9 @@ myImage.onclick = () => {
 };
 
 let myButton = document.querySelector("button");
-myButton.onclick=()=>{setUserName()};
+myButton.onclick = () => {
+  setUserName();
+};
 
 if (!localStorage.getItem("name1")) {
   setUserName();
@@ -30,9 +32,10 @@ if (!localStorage.getItem("name1")) {
 
 function setUserName() {
   const myName = prompt("Please enter your name.");
- if(!myName){
-  setUserName();
- }
-  else{ localStorage.setItem("name1", myName);
-  myHeading.textContent=`mozilla is cool, ${myName}`;}
+  if (!myName) {
+    setUserName();
+  } else {
+    localStorage.setItem("name1", myName);
+    myHeading.textContent = `mozilla is cool, ${myName}`;
+  }
 }
