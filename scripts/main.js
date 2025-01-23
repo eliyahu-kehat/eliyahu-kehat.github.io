@@ -29,7 +29,7 @@ if (!localStorage.getItem("name1")) {
 }
 
 function setUserName() {
-  const myName = prompt("please enter your name.");
+  const myName = prompt("Please enter your name.");
  if(!myName){
   setUserName();
  }
